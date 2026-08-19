@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortech</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:#e5e7eb;line-height:1.6}
+header{background:linear-gradient(135deg,#b91c1c,#111827 70%);padding:80px 20px;text-align:center}
+header h1{font-size:52px;letter-spacing:2px;color:#facc15}
+header p{max-width:700px;margin:18px auto;font-size:18px}
+.btn{display:inline-block;margin:10px;padding:14px 26px;border-radius:8px;text-decoration:none;font-weight:bold}
+.primary{background:#facc15;color:#111827}
+.secondary{border:2px solid #facc15;color:#facc15}
+section{padding:60px 22px;max-width:1100px;margin:auto}
+.title{text-align:center;font-size:34px;margin-bottom:40px;color:#facc15}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#1e293b;padding:24px;border-radius:14px;border-top:4px solid #22c55e;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.icon{font-size:38px;margin-bottom:12px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.project{background:#111827;border-radius:14px;overflow:hidden;border:1px solid #334155}
+.image{height:180px;display:flex;align-items:center;justify-content:center;font-size:60px;background:linear-gradient(135deg,#1d4ed8,#0f766e)}
+.project .content{padding:18px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.aboutbox{background:#1e293b;padding:24px;border-radius:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:20px}
+.stat{background:#0f172a;padding:18px;border-radius:10px;text-align:center}
+.contact{text-align:center}
+footer{background:#020617;padding:25px;text-align:center;color:#94a3b8;margin-top:40px}
+@media(max-width:700px){header h1{font-size:38px}.about{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<h1>MORTECH</h1>
+<p>Smart Electrical Engineering, IoT Automation & Custom Software Solutions for Homes, Businesses and Data Centers.</p>
+<a href="#projects" class="btn primary">Our Projects</a>
+<a href="#contact" class="btn secondary">Contact Us</a>
+</header>
+<section>
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card"><div class="icon">⚡</div><h3>Electrical Installation</h3><p>DB wiring, cable trays, earthing systems, maintenance and power distribution.</p></div>
+<div class="card"><div class="icon">📡</div><h3>IoT Automation</h3><p>ESP32, sensors, MQTT, Firebase and smart monitoring systems.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Android Development</h3><p>Java-based mobile applications with real-time Firebase integration.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>Data Center Support</h3><p>Rack power, AC/DC PDUs, battery systems and infrastructure installation.</p></div>
+</div>
+</section>
+<section id="projects">
+<h2 class="title">Featured Projects</h2>
+<div class="projects">
+<div class="project"><div class="image">🛡️</div><div class="content"><h3>Smart Intruder Alert</h3><p>ESP32 + PIR sensor security system with Android alarm notifications and Firebase cloud database.</p></div></div>
+<div class="project"><div class="image">💡</div><div class="content"><h3>Mortech Remote IO</h3><p>Control LEDs, relays and sensors remotely using Android and real-time cloud communication.</p></div></div>
+<div class="project"><div class="image">🔋</div><div class="content"><h3>Huawei Data Center</h3><p>Professional AC/DC rack power installation, cable management and electrical commissioning.</p></div></div>
+</div>
+</section>
+<section>
+<h2 class="title">About Mortech</h2>
+<div class="about">
+<div class="aboutbox"><h3>Engineering Meets Software</h3><p style="margin-top:10px;">Mortech combines electrical engineering, embedded systems and software development to build practical automation solutions. Our vision is to create reliable African technology from Lesotho.</p></div>
+<div class="aboutbox"><h3>Why Choose Us?</h3>
+<div class="stats">
+<div class="stat"><h2 style="color:#22c55e;">ESP32</h2><small>IoT Platform</small></div>
+<div class="stat"><h2 style="color:#22c55e;">Java</h2><small>Android Apps</small></div>
+<div class="stat"><h2 style="color:#22c55e;">Firebase</h2><small>Cloud Backend</small></div>
+<div class="stat"><h2 style="color:#22c55e;">Electrical</h2><small>Field Experience</small></div>
+</div></div></div>
+</section>
+<section id="contact" class="contact">
+<h2 class="title">Contact</h2>
+<p>📍 Maseru, Lesotho</p>
+<p>📧 hello@mortech.co.ls</p>
+<p>📞 +266 XX XXX XXX</p>
+<p style="margin-top:25px;color:#9ca3af;">Building the future through electricity, automation and software.</p>
+</section>
+<footer>© 2026 Mortech. Smart Electrical & IoT Solutions.</footer>
+</body>
+</html>
