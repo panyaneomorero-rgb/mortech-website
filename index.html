@@ -1,297 +1,348 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<title>Mortech</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <title>Mortech | Electrical Engineering • IoT • Automation</title>
 
-		</head>
-		<body>
-<header class="hero">
-<nav>
+  <meta name="description"
+        content="Mortech builds electrical engineering, IoT automation, smart security and embedded technology solutions in Lesotho.">
 
-    <h2 class="logo">MORTECH</h2>
+  <meta name="author" content="Mortech">
 
-    <button class="menu-toggle" id="menu-toggle">
-        ☰
-    </button>
+  <!-- Create this later: images/favicon.png -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="home">
+
+  <nav>
+    <a href="#home" class="logo">
+  <img src="images/logo.png" alt="Mortech Logo">
+  <div class="logo-text">
+    <span>MORTECH</span>
+    <small>Electrical • IoT • Automation</small>
+  </div>
+</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
 
     <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
 
-</nav>
+<div class="hero-content">
 
-    <div class="hero-content">
-        <p class="tag">Electrical • IoT • Automation</p>
+  <p class="tag">ELECTRICAL • IoT • AUTOMATION</p>
 
-        <h1>Building the Future with Smart Engineering</h1>
+  <h1>
+    Building the Future
+    <span>with Smart Engineering</span>
+  </h1>
 
-        <p class="description">
-            Mortech designs electrical systems, IoT automation,
-            smart security and innovative engineering solutions
-            for homes and businesses.
-        </p>
+  <p class="description">
+    Mortech develops electrical infrastructure, industrial automation,
+    embedded IoT systems and intelligent security solutions for homes,
+    businesses and telecommunications environments.
+  </p>
 
-        <div class="buttons">
-            <a href="#" class="btn-red">Our Projects</a>
-            <a href="#" class="btn-outline">Contact Us</a>
-        </div>
-    </div>
+  <div class="buttons">
+    <a href="#projects" class="btn-red">🚀 Our Projects</a>
+    <a href="#contact" class="btn-outline">✉ Contact Us</a>
+  </div>
+
+</div>
+
 </header>
 
-<section class="services" id="services">
 
-    <p class="section-tag">WHAT WE DO</p>
-    <h2>Our Services</h2>
+<section class="services reveal" id="services">
 
-    <div class="service-grid">
+  <p class="section-tag">WHAT WE DO</p>
+  <h2>Our Services</h2>
 
-        <div class="card">
-            <div class="icon">⚡</div>
-            <h3>Electrical Installation</h3>
-            <p>Domestic, commercial and industrial electrical installations.</p>
-        </div>
+  <div class="service-grid">
 
-        <div class="card">
-            <div class="icon">📡</div>
-            <h3>IoT Automation</h3>
-            <p>ESP32, smart sensors, remote monitoring and automation.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🛡️</div>
-            <h3>Security Systems</h3>
-            <p>Smart intruder alerts, CCTV and intelligent protection.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🎬</div>
-            <h3>3D Engineering</h3>
-            <p>Technical visualization and installation animations.</p>
-        </div>
-
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h3>Electrical Installation</h3>
+      <p>Domestic, commercial and industrial electrical installations.</p>
     </div>
+
+    <div class="card">
+      <div class="icon">📡</div>
+      <h3>IoT Automation</h3>
+      <p>ESP32, Firebase and remote monitoring solutions.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Security Systems</h3>
+      <p>Smart intruder alerts and intelligent protection.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎬</div>
+      <h3>3D Engineering</h3>
+      <p>Technical visualization and installation animations.</p>
+    </div>
+
+  </div>
 
 </section>
 
 
-<section class="projects" id="projects">
+<section class="projects reveal" id="projects">
 
-    <p class="section-tag">OUR WORK</p>
-    <h2>Featured Projects</h2>
+  <p class="section-tag">OUR WORK</p>
+  <h2>Featured Projects</h2>
 
-    <div class="project-grid">
+  <div class="project-grid">
 
-        <div class="project-card">
-
-    <div class="project-image">
-        <img src="images/project2.jfif" alt="Smart IoT Dashboard">
-
-        <div class="project-overlay">
-            <a href="projects/iot-dashboard.html">VIEW PROJECT →</a>
-        </div>
-    </div>
-
-    <div class="project-info">
-        <h3>Smart IoT Dashboard</h3>
-        <p>ESP32 • Firebase • Remote Control</p>
-    </div>
-
-</div>
-
-
+    <!-- Project 1 -->
 <div class="project-card">
 
-    <div class="project-image">
-        <img src="images/project1.jfif" alt="Smart Intruder Alert">
+  <div class="project-image">
+    <img src="images/project3.jfif" alt="Smart IoT Dashboard">
 
-        <div class="project-overlay">
-            <a href="#">VIEW PROJECT →</a>
-        </div>
+    <div class="project-overlay">
+      <a href="projects/iot-dashboard.html" class="view-btn">
+        View Project →
+      </a>
+    </div>
+  </div>
+
+  <div class="project-info">
+
+    <div class="project-tags">
+      <span>ESP32</span>
+      <span>Firebase</span>
+      <span>Android</span>
     </div>
 
-    <div class="project-info">
-        <h3>Smart Intruder Alert</h3>
-        <p>PIR Sensor • Android • Firebase</p>
-    </div>
+    <h3>Smart IoT Dashboard</h3>
+
+    <p>
+      Real-time monitoring and wireless device control using
+      ESP32 and Firebase Realtime Database.
+    </p>
+
+  </div>
 
 </div>
 
+    <!-- Project 2 -->
+   <div class="project-card">
 
-<div class="project-card">
+  <div class="project-image">
+    <img src="images/project2.jfif" alt="Smart Intruder Alert">
 
-    <div class="project-image">
-        <img src="images/project3.jfif" alt="Electrical Installation">
+    <div class="project-overlay">
+      <a href="projects/smart-intruder-alert.html" class="view-btn">
+        View Project →
+      </a>
+    </div>
+  </div>
 
-        <div class="project-overlay">
-            <a href="#">VIEW PROJECT →</a>
-        </div>
+  <div class="project-info">
+
+    <div class="project-tags">
+      <span>ESP32</span>
+      <span>Firebase</span>
+      <span>IoT</span>
     </div>
 
-    <div class="project-info">
-        <h3>Electrical Installation</h3>
-        <p>Power Systems • Cable Tray • Data Center</p>
-    </div>
+    <h3>Smart Intruder Alert</h3>
+
+    <p>
+      IoT security system using ESP32, PIR motion detection and
+      Firebase to provide real-time remote intrusion alerts.
+    </p>
+
+  </div>
 
 </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+
+  <div class="project-image">
+    <img src="images/project4.jfif" alt="Electrical Installation">
+
+    <div class="project-overlay">
+      <a href="projects/electrical-installation.html" class="view-btn">
+        View Project →
+      </a>
     </div>
+  </div>
+
+  <div class="project-info">
+
+    <div class="project-tags">
+      <span>Electrical</span>
+      <span>Installation</span>
+      <span>Maintenance</span>
+    </div>
+
+    <h3>Electrical Installation</h3>
+
+    <p>
+      Professional electrical installation, maintenance and power
+      distribution work for residential and commercial systems.
+    </p>
+
+  </div>
+
+</div>
+
+  </div>
 
 </section>
 
-<section class="stats">
 
-    <p class="section-tag">MORTECH IN NUMBERS</p>
-    <h2>Growing Through Engineering</h2>
+<section class="stats reveal">
 
-    <div class="stats-grid">
+  <p class="section-tag">MORTECH IN NUMBERS</p>
+  <h2>Growing Through Engineering</h2>
 
-        <div class="stat">
-            <h3 class="counter" data-target="25">0</h3>
-            <p>Projects</p>
-        </div>
+  <div class="stats-grid">
 
-        <div class="stat">
-            <h3 class="counter" data-target="12">0</h3>
-            <p>IoT Devices</p>
-        </div>
-
-        <div class="stat">
-            <h3 class="counter" data-target="18">0</h3>
-            <p>Clients</p>
-        </div>
-
-        <div class="stat">
-            <h3 class="counter" data-target="7">0</h3>
-            <p>Years Learning</p>
-        </div>
-
+    <div class="stat">
+      <h3 class="counter" data-target="25">0</h3>
+      <p>Projects Built</p>
     </div>
+
+    <div class="stat">
+      <h3 class="counter" data-target="12">0</h3>
+      <p>IoT Prototypes</p>
+    </div>
+
+    <div class="stat">
+      <h3 class="counter" data-target="18">0</h3>
+      <p>Systems Designed</p>
+    </div>
+
+    <div class="stat">
+      <h3 class="counter" data-target="7">0</h3>
+      <p>Years of Learning</p>
+    </div>
+
+  </div>
 
 </section>
 
-<script src="script.js"></script>
 
-<section class="about" id="about">
+<section class="about reveal" id="about">
 
-    <div class="about-image">
-        <img src="images/about.jfif" alt="Mortech Engineer">
+  <div class="about-image">
+    <img src="images/project1.jfif" alt="Mortech engineering">
+  </div>
+
+  <div class="about-text">
+
+    <p class="section-tag">ABOUT MORTECH</p>
+
+    <h2>Engineering Practical Smart Solutions</h2>
+
+    <p>
+      Mortech combines electrical engineering, IoT automation,
+      embedded systems and software development to create practical
+      solutions for homes and businesses.
+    </p>
+
+    <div class="about-list">
+      <div>✔ Electrical Installations</div>
+      <div>✔ ESP32 & IoT Systems</div>
+      <div>✔ Smart Security</div>
+      <div>✔ 3D Technical Visualization</div>
     </div>
 
-    <div class="about-text">
-
-        <p class="section-tag">ABOUT MORTECH</p>
-
-        <h2>Engineering Practical Smart Solutions</h2>
-
-        <p>
-            Mortech is an engineering company focused on electrical
-            installations, IoT automation, smart security and technical
-            innovation. We combine practical electrical experience with
-            modern software and embedded systems.
-        </p>
-
-        <div class="about-list">
-
-            <div>✔ Electrical Installations</div>
-            <div>✔ ESP32 & IoT Systems</div>
-            <div>✔ Smart Security Solutions</div>
-            <div>✔ 3D Technical Visualization</div>
-
-        </div>
-
-    </div>
+  </div>
 
 </section>
 
-<section class="contact" id="contact">
 
-    <p class="section-tag">GET IN TOUCH</p>
-    <h2>Let's Build Something</h2>
+<section class="contact reveal" id="contact">
 
-    <div class="contact-container">
+  <p class="section-tag">GET IN TOUCH</p>
+  <h2>Let's Build Something</h2>
 
-        <div class="contact-info">
+  <div class="contact-container">
 
-            <h3>Contact Mortech</h3>
+    <div class="contact-info">
 
-            <p>
-                Have an electrical, automation or IoT project?
-                Let's discuss how we can turn the idea into a
-                working solution.
-            </p>
+      <h3>Contact Mortech</h3>
 
-            <div class="contact-item">
-                <strong>📍 Location</strong>
-                <span>Maseru, Lesotho</span>
-            </div>
+      <p>
+        Have an electrical or automation project?
+        Let's discuss your idea.
+      </p>
 
-            <div class="contact-item">
-                <strong>📞 Phone</strong>
-                <span>+266 51409694</span>
-            </div>
+      <div class="contact-item">
+        <strong>📍 Location</strong><br>
+        <span>Maseru, Lesotho</span>
+      </div>
 
-            <div class="contact-item">
-                <strong>✉ Email</strong>
-                <span>moreropanyane@gmail.com</span>
-            </div>
+      <div class="contact-item">
+        <strong>📞 Phone</strong><br>
+        <a href="tel:+26651409694">+266 514 09694</a>
+      </div>
 
-        </div>
-
-
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name">
-
-            <input type="email" placeholder="Your Email">
-
-            <input type="text" placeholder="Subject">
-
-            <textarea rows="6"
-                placeholder="Tell us about your project..."></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
+      <div class="contact-item">
+        <strong>✉ Email</strong><br>
+        <a href="mailto:info@mortech.co.ls">info@mortech.co.ls</a>
+      </div>
 
     </div>
 
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="6" placeholder="Tell us about your project..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
 </section>
+
 
 <footer class="footer">
 
-    <div class="footer-content">
+  <div class="footer-content">
 
-        <div class="footer-brand">
-            <h2>MORTECH</h2>
-            <p>
-                Electrical Engineering • IoT • Automation
-            </p>
-        </div>
-
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-
+    <div class="footer-brand">
+      <h2>MORTECH</h2>
+      <p>Electrical Engineering • IoT • Automation</p>
     </div>
 
-    <div class="footer-bottom">
-        <p>© 2026 Mortech. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Mortech. All rights reserved.</p>
+  </div>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>

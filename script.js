@@ -1,23 +1,25 @@
-const counters = document.querySelectorAll('.counter');
+// Animated Counters
 
-counters.forEach(counter => {
+const counters = document.querySelectorAll(".counter");
 
-    const updateCounter = () => {
+counters.forEach(counter=>{
 
-        const target = Number(counter.dataset.target);
-        const current = Number(counter.innerText);
+    const updateCounter=()=>{
 
-        const increment = Math.ceil(target / 100);
+        const target=+counter.dataset.target;
+        const current=+counter.innerText;
 
-        if(current < target){
+        const increment=Math.ceil(target/100);
 
-            counter.innerText = current + increment;
+        if(current<target){
+
+            counter.innerText=current+increment;
 
             setTimeout(updateCounter,20);
 
         }else{
 
-            counter.innerText = target;
+            counter.innerText=target;
 
         }
 
@@ -27,11 +29,47 @@ counters.forEach(counter => {
 
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
+// Mobile Menu
+
+const menuToggle=document.getElementById("menu-toggle");
+const navLinks=document.getElementById("nav-links");
+
+menuToggle.addEventListener("click",()=>{
 
     navLinks.classList.toggle("active");
 
 });
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+// Scroll Reveal
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSections(){
+
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(section => {
+
+        const top = section.getBoundingClientRect().top;
+
+        if(top < windowHeight - 100){
+            section.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+window.addEventListener("load", revealSections);
